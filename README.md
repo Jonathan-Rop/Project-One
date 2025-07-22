@@ -5,7 +5,7 @@
 
 # <div align="center">SCHEDULING WITH AIRFLOW</div>
 
-Following the previous project ideas trend, it is essential to include scheduling in data pipelines—whether ETL or ELT—since data can arrive and be processed on varying timelines. In this third project, I incorporated Apache Airflow (using Astronomer/Astro) to orchestrate and schedule the pipeline using Directed Acyclic Graphs (DAGs).
+Following the previous project ideas trend, it is essential to include scheduling in data pipelines—whether ETL or ELT—since data can arrive and be processed on varying timelines. In this  project, I incorporated Apache Airflow (using Astronomer/Astro) to orchestrate and schedule the pipeline using Directed Acyclic Graphs (DAGs).
 
 The pipeline follows the Extract-Transform-Load (ETL) structure, where raw data is extracted from an API source, loaded into a Bronze PostgreSQL table, transformed, and written into a Gold layer for analytical consumption. Airflow handles the orchestration of each task, ensuring that data movement, cleaning, and loading happen reliably and on schedule.
 
@@ -22,6 +22,8 @@ In this Project, I have sourced files from an open source data  (Health Data - o
   <li><a href="https://spark.apache.org/docs/latest/api/python/index.html)">PYSPARK</a></li>
     <li><a href="https://www.postgresql.org/">POSTGRESQL</a></li>
     <li><a href="https://grafana.com/">GRAFANA</a></li>
+      <li><a href="https://grafana.com/">DOCKER -FOR CONTAINERIZATION</a></li>
+        <li><a href="https://grafana.com/">APACHE AIRFLOW</a></li>
 
 </ul>
 ###  Key Features <a name="key-features"></a>
