@@ -5,14 +5,13 @@
 
 # <div align="center">SCHEDULING WITH AIRFLOW</div>
 
-A case study for visitors (both foreign and local) visiting the Kenyan Tourism sector
+Following the previous project ideas trend, it is essential to include scheduling in data pipelines—whether ETL or ELT—since data can arrive and be processed on varying timelines. In this third project, I incorporated Apache Airflow (using Astronomer/Astro) to orchestrate and schedule the pipeline using Directed Acyclic Graphs (DAGs).
 
-With the rising numbers of tourism in Kenya, The Kenya wildlife service (KWS) has been recording an influx of visitors coming to see Kenya’s wildlife.
-Upon research and study on this information, I learnt that KWS has been receiving guests from an existing system (kwspay.ectizen.go.ke) but data has been always been extracted (for information/Metrics reasons) in a csv format.
-My idea of this problem statement is to automate some of these processes and improve on their data reporting and better handling to help the marketing department analyze data and improve more on their marketing stats to different countries selling Kenya’s tourism pride abroad
+The pipeline follows the Extract-Transform-Load (ETL) structure, where raw data is extracted from an API source, loaded into a Bronze PostgreSQL table, transformed, and written into a Gold layer for analytical consumption. Airflow handles the orchestration of each task, ensuring that data movement, cleaning, and loading happen reliably and on schedule.
 
+This project also demonstrates my understanding of containerization, as the pipeline is developed, deployed, and managed within Docker containers, allowing for reproducibility and portability. Additionally, the processed data is visualized in Grafana, providing real-time insights.
 
-In this Project, I have sourced files from an open source data  (KWS), perfomed ETL processes using pyspark and visualization using Grafana:
+In this Project, I have sourced files from an open source data  (Health Data - oN diabetes), perfomed ETL processes using pyspark and visualization using Grafana:
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -26,7 +25,6 @@ In this Project, I have sourced files from an open source data  (KWS), perfomed 
 
 </ul>
 ###  Key Features <a name="key-features"></a>
-- Show use of spark in databricks
 - Perform transformations on provided Data
 - Link the Gold layered data to a data warehouse
 - perform SQL transformations
@@ -51,6 +49,7 @@ Clone this repository to your desired folder:
 To run this project you need:
 
 - GitHub account;
+- Editor of your choice(VS code)
 - Git installed on your OS.
 
 ### Install
@@ -63,7 +62,7 @@ To run this project you need:
 -  Install Python
 -  Install PostgreSQL
 -  Install Pandas
--  Spark
+-  Spark and Java version 8
 -  PostgreSQL/SQL
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
